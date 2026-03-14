@@ -1,0 +1,7 @@
+CREATE TABLE admin_users (
+    id BIGSERIAL PRIMARY KEY,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL DEFAULT 'OPERATOR',
+    created_at TIMESTAMP DEFAULT NOW()
+);

@@ -1,0 +1,9 @@
+.env
+target/
+build/
+*.class
+*.jar
+*.log
+.idea/
+*.iml
+.DS_Store
